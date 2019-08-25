@@ -4,12 +4,14 @@
     "default": {
       "connector": "strapi-hook-bookshelf",
       "settings": {
-        "client": "sqlite",
-        "filename": ".tmp/data.db"
+        "client": "postgres",
+        "database": "band-secretariat",
+        "host": "127.0.0.1",
+        "port": 5432,
+        "username": "admin",
+        "password": "root"
       },
-      "options": {
-        "useNullAsDefault": true
-      }
+      "options": {}
     }
   }
 }
