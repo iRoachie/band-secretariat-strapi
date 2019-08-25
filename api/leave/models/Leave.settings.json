@@ -1,0 +1,34 @@
+{
+  "connection": "default",
+  "collectionName": "leaves",
+  "info": {
+    "name": "leave",
+    "description": "Leave of Absence"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "bandsman": {
+      "model": "bandsman",
+      "via": "leaves"
+    },
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "endDate": {
+      "type": "date",
+      "required": true
+    },
+    "reason": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bandsmen",
+      "handler": "Bandsman.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bandsmen/count",
+      "handler": "Bandsman.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bandsmen/:id",
+      "handler": "Bandsman.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bandsmen",
+      "handler": "Bandsman.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bandsmen/:id",
+      "handler": "Bandsman.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bandsmen/:id",
+      "handler": "Bandsman.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

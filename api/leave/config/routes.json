@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/leaves",
+      "handler": "Leave.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/leaves/count",
+      "handler": "Leave.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/leaves/:id",
+      "handler": "Leave.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/leaves",
+      "handler": "Leave.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/leaves/:id",
+      "handler": "Leave.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/leaves/:id",
+      "handler": "Leave.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
