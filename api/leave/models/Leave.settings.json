@@ -14,10 +14,6 @@
     "comment": ""
   },
   "attributes": {
-    "bandsman": {
-      "model": "bandsman",
-      "via": "leaves"
-    },
     "startDate": {
       "type": "date",
       "required": true
@@ -29,6 +25,10 @@
     "reason": {
       "type": "text",
       "required": true
+    },
+    "bandsman": {
+      "model": "bandsman",
+      "via": "leaves"
     }
   }
 }
