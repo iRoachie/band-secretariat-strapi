@@ -7,10 +7,7 @@
   },
   "options": {
     "increments": true,
-    "timestamps": [
-      "created_at",
-      "updated_at"
-    ],
+    "timestamps": ["created_at", "updated_at"],
     "comment": ""
   },
   "attributes": {
@@ -23,7 +20,7 @@
       "required": true
     },
     "reason": {
-      "type": "text",
+      "type": "richtext",
       "required": true
     },
     "bandsman": {
